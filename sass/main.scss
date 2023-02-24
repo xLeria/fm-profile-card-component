@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    // border: 1px solid red;
 }
 
 html{
@@ -22,12 +23,90 @@ body{
     background-color: $body-background-color;
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 326px;
+    background-color: $white-color;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px hsla(0,0,0,.2);
+    overflow: hidden;
+
+    .card-bg-img{
+        width: 100%;
+        min-height: 140px;
+        background-image: url('../images/bg-pattern-card.svg');
+    }
+
+    .card-user{
+        width: 100%;
+        text-align: center;
+
+        &__avatar{
+            margin-top: -17%;
+            border: 5px solid $white-color;
+            border-radius: 50%;
+        }
+
+        &__info{
+            margin: .5em 0;
+        }
+
+        &__title{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: .5em;
+            font-size: 1.8rem;
+        }
+
+        &__name, &__stat-number{
+            color: $dark-gray-color;
+            font-weight: $bold-font-weight;
+        }
+
+        &__city{
+            font-size: 1.4rem;
+        }
+
+        &__stats{
+            display: flex;
+            justify-content: center;
+            margin-top: 1.4em;
+            padding: 1.4em;
+            border-top: 1px solid $gray-color;
+        }
+
+        &__stat{
+            min-width: 100px;
+        }
+
+        &__stat-text{
+            margin-top: .3em;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+
+        &__stat-number{
+            font-size: 1.8rem;
+        }
+    }
+}
+
 .attribution {
+    color: $white-color;
     margin-top: 2em;
 	font-size: 1.1rem;
 	text-align: center;
 
 	a {
-		color: hsl(228, 45%, 44%);
+		color: hsl(0, 0%, 100%);
+        font-weight: 700;
 	}
 }
