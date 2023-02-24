@@ -1,5 +1,34 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.6rem;
+  color: hsl(227deg, 10%, 46%);
+  background-color: hsl(185deg, 75%, 39%);
+}
+
 .attribution {
-  font-size: 11px;
+  margin-top: 2em;
+  font-size: 1.1rem;
   text-align: center;
 }
 .attribution a {

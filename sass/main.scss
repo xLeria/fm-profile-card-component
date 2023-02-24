@@ -1,5 +1,29 @@
+@use './variables' as *;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $body-font;
+    font-size: $body-font-size;
+    color: $body-text-color;
+    background-color: $body-background-color;
+}
+
 .attribution {
-	font-size: 11px;
+    margin-top: 2em;
+	font-size: 1.1rem;
 	text-align: center;
 
 	a {
