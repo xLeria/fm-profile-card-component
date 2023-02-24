@@ -68,6 +68,11 @@ img{
             margin-top: -17%;
             border: 5px solid $white-color;
             border-radius: 50%;
+            transition: rotate 1.7s ease-in-out;
+
+            &:hover{
+                rotate: 360deg;
+            }
         }
 
         &__info{

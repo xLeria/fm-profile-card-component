@@ -82,6 +82,11 @@ img {
   margin-top: -17%;
   border: 5px solid hsl(0deg, 0%, 100%);
   border-radius: 50%;
+  -webkit-transition: rotate 1.7s ease-in-out;
+  transition: rotate 1.7s ease-in-out;
+}
+.card .card-user__avatar:hover {
+  rotate: 360deg;
 }
 .card .card-user__info {
   margin: 0.5em 0;
