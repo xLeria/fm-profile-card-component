@@ -21,11 +21,26 @@ body{
     font-size: $body-font-size;
     color: $body-text-color;
     background-color: $body-background-color;
+    overflow: hidden;
 }
 
 img{
     max-width: 100%;
     height: auto;
+}
+
+.background-circle{
+    position: absolute;
+}
+
+.top{
+    left: -25%;
+    top: -25%;
+}
+
+.bottom{
+    right: -25%;
+    bottom: -25%;
 }
 
 .card{
@@ -37,6 +52,7 @@ img{
     border-radius: 12px;
     box-shadow: 0 2px 10px hsla(0,0,0,.2);
     overflow: hidden;
+    z-index: 1;
 
     .card-bg-img{
         width: 100%;
