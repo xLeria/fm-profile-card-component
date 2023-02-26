@@ -4,7 +4,6 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	// border: 1px solid red;
 }
 
 html {
@@ -21,26 +20,16 @@ body {
 	font-size: $body-font-size;
 	color: $body-text-color;
 	background-color: $body-background-color;
-	overflow: hidden;
+	background-image: url('../images/bg-pattern-top.svg'),
+		url('../images/bg-pattern-bottom.svg');
+	background-repeat: no-repeat;
+	background-position: right 51.9vw bottom 35vh, left 48vw top 52vh;
+	// overflow: hidden;
 }
 
 img {
 	max-width: 100%;
 	height: auto;
-}
-
-.background-circle {
-	position: absolute;
-}
-
-.top {
-	left: -25%;
-	top: -25%;
-}
-
-.bottom {
-	right: -25%;
-	bottom: -25%;
 }
 
 .card {

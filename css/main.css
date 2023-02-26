@@ -28,26 +28,14 @@ body {
   font-size: 1.6rem;
   color: hsl(227, 10%, 46%);
   background-color: hsl(185, 75%, 39%);
-  overflow: hidden;
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: right 51.9vw bottom 35vh, left 48vw top 52vh;
 }
 
 img {
   max-width: 100%;
   height: auto;
-}
-
-.background-circle {
-  position: absolute;
-}
-
-.top {
-  left: -25%;
-  top: -25%;
-}
-
-.bottom {
-  right: -25%;
-  bottom: -25%;
 }
 
 .card {
