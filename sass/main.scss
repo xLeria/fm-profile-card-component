@@ -1,133 +1,134 @@
 @use './variables' as *;
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    // border: 1px solid red;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	// border: 1px solid red;
 }
 
-html{
-    font-size: 62.5%;
+html {
+	font-size: 62.5%;
 }
 
-body{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: $body-font;
-    font-size: $body-font-size;
-    color: $body-text-color;
-    background-color: $body-background-color;
-    overflow: hidden;
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: $body-font;
+	font-size: $body-font-size;
+	color: $body-text-color;
+	background-color: $body-background-color;
+	overflow: hidden;
 }
 
-img{
-    max-width: 100%;
-    height: auto;
+img {
+	max-width: 100%;
+	height: auto;
 }
 
-.background-circle{
-    position: absolute;
+.background-circle {
+	position: absolute;
 }
 
-.top{
-    left: -25%;
-    top: -25%;
+.top {
+	left: -25%;
+	top: -25%;
 }
 
-.bottom{
-    right: -25%;
-    bottom: -25%;
+.bottom {
+	right: -25%;
+	bottom: -25%;
 }
 
-.card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 326px;
-    background-color: $white-color;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px hsla(0,0,0,.2);
-    overflow: hidden;
-    z-index: 1;
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 326px;
+	background-color: $white-color;
+	border-radius: 12px;
+	box-shadow: 0 2px 10px hsla(0, 0, 0, 0.2);
+	overflow: hidden;
+	z-index: 1;
 
-    .card-bg-img{
-        width: 100%;
-        min-height: 140px;
-        background-image: url('../images/bg-pattern-card.svg');
-    }
+	.card-bg-img {
+		width: 100%;
+		min-height: 140px;
+		background-image: url('../images/bg-pattern-card.svg');
+	}
 
-    .card-user{
-        width: 100%;
-        text-align: center;
+	.card-user {
+		width: 100%;
+		text-align: center;
 
-        &__avatar{
-            margin-top: -17%;
-            border: 5px solid $white-color;
-            border-radius: 50%;
-            transition: rotate 1.7s ease-in-out;
+		&__avatar {
+			margin-top: -17%;
+			border: 5px solid $white-color;
+			border-radius: 50%;
+			transition: rotate 1.7s ease-in-out;
 
-            &:hover{
-                rotate: 360deg;
-            }
-        }
+			&:hover {
+				rotate: 360deg;
+			}
+		}
 
-        &__info{
-            margin: .5em 0;
-        }
+		&__info {
+			margin: 0.5em 0;
+		}
 
-        &__title{
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            padding: .5em;
-            font-size: 1.8rem;
-        }
+		&__title {
+			display: flex;
+			justify-content: center;
+			gap: 10px;
+			padding: 0.5em;
+			font-size: 1.8rem;
+		}
 
-        &__name, &__stat-number{
-            color: $dark-gray-color;
-            font-weight: $bold-font-weight;
-        }
+		&__name,
+		&__stat-number {
+			color: $dark-gray-color;
+			font-weight: $bold-font-weight;
+		}
 
-        &__city{
-            font-size: 1.4rem;
-        }
+		&__city {
+			font-size: 1.4rem;
+		}
 
-        &__stats{
-            display: flex;
-            justify-content: center;
-            margin-top: 1.4em;
-            padding: 1.4em;
-            border-top: 1px solid $gray-color;
-        }
+		&__stats {
+			display: flex;
+			justify-content: center;
+			margin-top: 1.4em;
+			padding: 1.4em;
+			border-top: 1px solid $gray-color;
+		}
 
-        &__stat{
-            min-width: 100px;
-        }
+		&__stat {
+			min-width: 100px;
+		}
 
-        &__stat-text{
-            margin-top: .3em;
-            font-size: 1.1rem;
-            letter-spacing: 1px;
-        }
+		&__stat-text {
+			margin-top: 0.3em;
+			font-size: 1.1rem;
+			letter-spacing: 1px;
+		}
 
-        &__stat-number{
-            font-size: 1.8rem;
-        }
-    }
+		&__stat-number {
+			font-size: 1.8rem;
+		}
+	}
 }
 
 .attribution {
-    color: $white-color;
-    margin-top: 2em;
+	color: $white-color;
+	margin-top: 2em;
 	font-size: 1.1rem;
 	text-align: center;
 
 	a {
 		color: hsl(0, 0%, 100%);
-        font-weight: 700;
+		font-weight: 700;
 	}
 }
