@@ -119,15 +119,4 @@ img {
 }
 .card .card-user__stat-number {
   font-size: 1.8rem;
-}
-
-.attribution {
-  color: hsl(0, 0%, 100%);
-  margin-top: 2em;
-  font-size: 1.1rem;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(0, 0%, 100%);
-  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */
